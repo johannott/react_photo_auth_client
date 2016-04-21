@@ -7,7 +7,7 @@ class Header extends Component {
         <ul className="nav navbar-nav">
           <li className="nav-item">
             Sign In
-                                                                                                                                                                                                                                                                                                                                </li>
+          </li>
         </ul>
       </nav>
     );
