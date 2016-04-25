@@ -4,20 +4,20 @@ import * as actions from '../actions';
 
 class Feature extends Component {
   componentWillMount() {
-    this.props.fetchMessage();
+     this.props.fetchMessage();
   }
 
   render() {
     return (
       <div>
-        {this.props.message}}
+        {this.props.message}
       </div>
     );
   }
 }
 
 function mapStateToProps(state) {
-  return { message: state.auth.message };
+   return { message: state.auth.message };
 }
 
 export default connect(mapStateToProps, actions)(Feature);

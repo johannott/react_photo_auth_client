@@ -66,12 +66,12 @@ export function signoutUser() {
 export function fetchMessage() {
   return function (dispatch) {
     axios.get(ROOT_URL, {
-      headers: { authentication: localStorage.getItem('token') },
+      headers: {authorization: localStorage.getItem('token') }
     })
-    .then(reponse => {
+    .then(response => {
       dispatch({
         type: FETCH_MESSAGE,
-        payload: response.data.message,
+        payload: response.data.message
       });
     });
   };
