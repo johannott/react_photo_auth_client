@@ -10,9 +10,9 @@ class Signin extends Component {
     this.props.signinUser({ email, password });
   }
 
-  renderAlert(){
-    if (this.props.errorMessage){
-      return(
+  renderAlert() {
+    if (this.props.errorMessage) {
+      return (
         <div className="alert alert-danger">
           <strong>Opps!</strong> {this.props.errorMessage}
         </div>
@@ -40,7 +40,7 @@ class Signin extends Component {
   }
 }
 
-function mapStateToProps(state){
+function mapStateToProps(state) {
   return { errorMessage: state.auth.error };
 }
 
