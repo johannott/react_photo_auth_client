@@ -2,9 +2,14 @@
   "extends": "ess",
   "parser": "babel-eslint",
   "root": true,
+  "plugins": [
+    "eslint-plugin-react"
+  ],
   "rules": {
     "func-names": 0,
     "no-alert": 0,
+    "react/jsx-uses-vars": 1,
+    "react/jsx-uses-react": 1,
     "no-unused-vars": [2, {"vars": "local", "args": "after-used", "argsIgnorePattern": "^(e|err|error|event|name|oldValue|newValue)$|__$"}]
   },
   "globals": {
