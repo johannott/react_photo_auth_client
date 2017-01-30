@@ -1,8 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import { connect } from 'react-redux';
-import * as actions from '../actions';
 
-class Feature extends Component {
+class PhotoGrid extends Component {
 
   static propTypes = {
         columns: PropTypes.number,
@@ -74,7 +72,6 @@ class Feature extends Component {
   render() {
     return (
       <div>
-        {this.props.message}
         {this.getGridElements(this.props.photos)}
         {this.getFullScreenImage(this.state.fullScreenImage)}
       </div>
@@ -82,8 +79,4 @@ class Feature extends Component {
   }
 }
 
-function mapStateToProps(state) {
-   return { message: state.auth.message };
-}
-
-export default connect(mapStateToProps, actions)(Feature);
+export default PhotoGrid;
