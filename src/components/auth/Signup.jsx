@@ -3,15 +3,14 @@ import { reduxForm } from 'redux-form';
 import * as actions from '../../actions';
 
 class Signup extends Component {
-  handleFormSubmit(formProps){
+  handleFormSubmit(formProps) {
     //Call action creator to sign up user!
     this.props.signupUser(formProps);
   }
 
-
-  renderAlert(){
-    if (this.props.errorMessage){
-      return(
+  renderAlert() {
+    if (this.props.errorMessage) {
+      return (
         <div className="alert alert-danger">
           <strong>Opps!</strong> {this.props.errorMessage}
         </div>
@@ -19,10 +18,10 @@ class Signup extends Component {
     }
   }
 
-  render(){
+  render() {
     const { handleSubmit, fields: { email, password, passwordConfirm }} = this.props;
 
-    return(
+    return (
       <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
         <fieldset className="form-group">
           <label>Email:</label>
@@ -57,18 +56,18 @@ function validate(formProps) {
     errors.password = 'Please enter a password';
   }
 
-  if(!formProps.passwordConfirm){
+  if (!formProps.passwordConfirm) {
     errors.passwordConfirm = 'Please enter a password confirmation';
   }
 
-  if (formProps.password !== formProps.passwordConfirm){
+  if (formProps.password !== formProps.passwordConfirm) {
     errors.password = 'Passwords must match';
   }
 
   return errors;
 }
 
-function mapStateToProps(state){
+function mapStateToProps(state) {
   return { errorMessage: state.auth.error };
 }
 
