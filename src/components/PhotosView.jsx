@@ -8,7 +8,7 @@ const columnsData = [
     {value: 2, label: 'x2'},
     {value: 3, label: 'x3'}];
 
-class Feature extends Component {
+class PhotosView extends Component {
 
   constructor(props) {
     super(props);
@@ -50,4 +50,4 @@ function mapStateToProps(state) {
   return { message: state.auth.message };
 }
 
-export default connect(mapStateToProps, actions)(Feature);
+export default connect(mapStateToProps, actions)(PhotosView);

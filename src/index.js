@@ -9,7 +9,7 @@ import App from './components/App.jsx';
 import Signin from './components/auth/Signin.jsx';
 import Signout from './components/auth/Signout.jsx';
 import Signup from './components/auth/Signup.jsx';
-import Feature from './components/Feature.jsx';
+import PhotosView from './components/PhotosView.jsx';
 import Welcome from './components/Welcome.jsx';
 import RequireAuth from './components/auth/RequireAuth.jsx';
 import reducers from './reducers';
@@ -34,7 +34,7 @@ ReactDOM.render(
         <Route path="signin" component={Signin} />
         <Route path="signout" component={Signout} />
         <Route path="signup" component={Signup} />
-        <Route path="feature" component={RequireAuth(Feature)} />
+        <Route path="photosview" component={RequireAuth(PhotosView)} />
       </Route>
     </Router>
   </Provider>, document.querySelector('.container'));
