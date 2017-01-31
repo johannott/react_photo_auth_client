@@ -19,7 +19,6 @@ class PhotoGrid extends Component {
     const classNames = this.isShowInfo() ? ['imageGridItem', 'column1'] : ['imageGridItem'];
     const style = this.isShowInfo() ? {} : {width : this.getPercentWidth() + '%'};
 
-    debugger;
     return photos.map(photo => (
       <div
          className={classNames.join(' ')}
