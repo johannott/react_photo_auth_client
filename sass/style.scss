@@ -136,3 +136,62 @@
     background-color: rgb(0, 139, 161) !important;
 
 }
+
+/* Navbar styles
+-------------------------------------------------- */
+.custom_nav {
+    margin-bottom: 80px;
+
+    .navbar {
+      background-color: #35404f;  /* Cloud Burst */
+      border-color: #35404f;  /* Cloud Burst */
+      color: #A3D39C;  /* Chinook */
+    }
+
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #35404f;  /* Cloud Burst */
+}
+
+.navbar-default .navbar-brand {
+    color: #A3D39C;  /* Chinook */
+    font-family: 'Graduate', Georgia, Times, serif;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+
+    &:focus {
+      color: #A3D39C;  /* Chinook */
+    }
+    &:hover {
+      color: #7ACCC8; /* Monte Carlo */
+    }
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: #A3D39C;  /* Chinook */
+    &:focus{
+      color: #A3D39C;  /* Chinook */
+    }
+    &:hover{
+      color: #7ACCC8;  /* Monte Carlo */
+    }
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #A3D39C; /* Chinook */
+    &:focus {
+      background-color: #35404f;  /* Cloud Burst */
+    }
+    &:hover {
+      background-color: #35404f;  /* Cloud Burst */
+    }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #A3D39C; /* Chinook */
+}
+
+.nav i {
+  padding-right: 5px;
+}
