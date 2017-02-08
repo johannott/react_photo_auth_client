@@ -90,6 +90,7 @@
 }
 
 .buttons a {
+    font-family: 'Graduate', Georgia, Times, serif;
     margin: 10px;
     /*box-shadow:0 0 10px rgba(0, 0, 0, 0.5);;*/
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -115,25 +116,26 @@
 }
 
 .secondaryButton a:link, .secondaryButton a:visited {
-    background-color: #00bcd4;
-    color: white
+    background-color: #A3D39C; /* Chinook */
+    color: #35404f /* Cloud Burst */
 }
 
 .secondaryButton a:hover, .secondaryButton a:active {
-    background-color: rgb(0, 161, 183);
+    background-color: #A3D39C; /* Chinook */
     box-shadow:0 10px 6px -6px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset ;
 }
 
 .defaultButton a:hover, .defaultButton a:active {
-    background-color: rgba(0, 0, 0, 0.078) ;
+    background-color: #A3D39C; /* Chinook */
     box-shadow:0 10px 6px -6px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 .defaultButtonSelected {
-    background-color: rgba(0, 0, 0, 0.2) !important;
+    background-color: #35404f /* Cloud Burst */ !important;
 
 }
 .secondaryButtonSelected {
-    background-color: rgb(0, 139, 161) !important;
+    background-color: #35404f /* Cloud Burst */ !important;
+    color: #A3D39C /* Chinook */ !important;
 
 }
 

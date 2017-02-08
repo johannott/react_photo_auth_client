@@ -5,8 +5,8 @@ import PhotoGrid from './PhotoGrid.jsx';
 import RadioButtonGroup from './RadioButtonGroup.jsx';
 
 const columnsData = [
-    {value: 2, label: 'x2'},
-    {value: 3, label: 'x3'}];
+    {value: 2, label: '2'},
+    {value: 3, label: '3'}];
 
 class PhotosView extends Component {
 
