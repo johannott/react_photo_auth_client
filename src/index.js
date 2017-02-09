@@ -11,7 +11,7 @@ import Signout from './components/auth/Signout.jsx';
 import Signup from './components/auth/Signup.jsx';
 import PhotosView from './components/PhotosView.jsx';
 
-// import Welcome from './components/Welcome.jsx';
+import Welcome from './components/Welcome.jsx';
 import RequireAuth from './components/auth/RequireAuth.jsx';
 import reducers from './reducers';
 import  { AUTH_USER } from './actions/types';
@@ -31,7 +31,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={App}>
-      <IndexRoute component={PhotosView} />
+      <IndexRoute component={Welcome} />
         <Route path="signin" component={Signin} />
         <Route path="signout" component={Signout} />
         <Route path="signup" component={Signup} />

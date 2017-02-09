@@ -16,8 +16,8 @@ export function signinUser({ email, password }) {
         // - Save the JWT token
         localStorage.setItem('token', response.data.token);
 
-        // - redirect to the route - /photosview
-        browserHistory.push('/photosview');
+        // - redirect to the route - /
+        browserHistory.push('/');
       })
       .catch(() => {
         // If request is bad...
@@ -39,8 +39,8 @@ export function signupUser({ email, password }) {
       // - Save the JWT token
       localStorage.setItem('token', response.data.token);
 
-      // - redirect to the route - /photosview
-      browserHistory.push('/photosview');
+      // - redirect to the route - /
+      browserHistory.push('/');
     })
     .catch(() => {
       // If request is bad...

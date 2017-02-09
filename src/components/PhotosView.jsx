@@ -18,10 +18,6 @@ class PhotosView extends Component {
     };
   }
 
-  componentWillMount() {
-    this.props.fetchMessage();
-  }
-
   onClick(value) {
     this.setState({
       columns: value
